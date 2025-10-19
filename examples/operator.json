@@ -1,0 +1,22 @@
+{
+  "$schema":"https://www.certificate-transparency.org/schemas/operator-list-v1.json",
+  "operator_name":"Cloudflare",
+  "last_updated":"2025-10-17T14:00:00Z",
+  "logs":[
+    {
+      "friendly_name":"nimbus2026",
+      "log_id":"QARZjGIGapxWkouQVUhxoB9/gnDMF9cgr75mIdrDPfg=",
+      "metadata_url":"https://ct.cloudflare.com/logs/nimbus2026/metadata.json"
+    },
+    {
+      "friendly_name":"raio2027",
+      "log_id":"QARZjGIGapxWkouQVUhxoB9/gnDMF9cgr75mIdrDPfg=",
+      "metadata_url":"https://ct.cloudflare.com/logs/raio2027/metadata.json"
+    },
+    {
+      "friendly_name":"raio2025",
+      "log_id":"QARZjGIGapxWkouQVUhxoB9/gnDMF9cgr75mIdrDPfg=",
+      "metadata_url":"https://ct.cloudflare.com/logs/raio2025/metadata.json"
+    }
+  ]
+}

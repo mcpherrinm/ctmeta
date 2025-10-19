@@ -1,0 +1,32 @@
+{
+  "$schema": "https://www.certificate-transparency.org/schemas/log-metadata-v1.json",
+  "log_id": "QARZjGIGapxWkouQVUhxoB9/gnDMF9cgr75mIdrDPfg=",
+  "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE4fAKQCtRdwFSPb8LBZKaoaSpFsxAw49+c7HlvV0YmmY+pVxYWchadoNHy6yyn9DhAzyHQCDNHROiH9rrvv5y8A==",
+  "friendly_name": "raio2025",
+  "log_type": "tiled",
+  "mmd_seconds": 60,
+  "intended_use": "retired",
+  "tls_only": true,
+  "temporal_interval": {
+    "start_inclusive": "2025-01-01T00:00:00Z",
+    "end_exclusive": "2026-01-01T00:00:00Z"
+  },
+  "submission_endpoint": {
+    "url": "https://ct.cloudflare.com/logs/raio2025/submit",
+    "status": "inactive",
+    "status_timestamp": "2026-01-01T00:00:00Z"
+  },
+  "monitoring_endpoint": {
+    "url": "https://raio2025.ct.cloudflare.com/monitor",
+    "status": "active",
+    "status_timestamp": "2025-01-01T00:00:00Z"
+  },
+  "final_tree_head": {
+    "sha256_root_hash": "eJj4IHvdYpljVsW/YCery+QsSRHbuYBME7H912a5P2Y=",
+    "tree_size": 1213760846
+  },
+  "log_software": {
+    "name": "CloudyMcCloudface",
+    "version": "1.9.8"
+  }
+}

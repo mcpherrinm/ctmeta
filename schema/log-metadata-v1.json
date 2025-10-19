@@ -1,0 +1,201 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CT Log Metadata",
+  "description": "Detailed metadata for a single Certificate Transparency log.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "log_id": {
+      "type": "string",
+      "pattern": "^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)?$"
+    },
+    "key": {
+      "type": "string",
+      "pattern": "^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)?$"
+    },
+    "friendly_name": {
+      "type": "string"
+    },
+    "log_type": {
+      "type": "string",
+      "enum": [
+        "rfc6962",
+        "tiled"
+      ]
+    },
+    "mmd_seconds": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "intended_use": {
+      "type": "string",
+      "enum": [
+        "production",
+        "pre-production",
+        "test",
+        "retired"
+      ]
+    },
+    "tls_only": {
+      "type": "boolean"
+    },
+    "temporal_interval": {
+      "type": "object",
+      "properties": {
+        "start_inclusive": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end_exclusive": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "start_inclusive",
+        "end_exclusive"
+      ]
+    },
+    "final_tree_head": {
+      "type": "object",
+      "properties": {
+        "sha256_root_hash": {
+          "type": "string",
+          "pattern": "^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)?$"
+        },
+        "tree_size": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "sha256_root_hash",
+        "tree_size"
+      ]
+    },
+    "log_software": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  "required": [
+    "log_id",
+    "key",
+    "friendly_name",
+    "log_type",
+    "mmd_seconds",
+    "intended_use",
+    "temporal_interval"
+  ],
+  "if": {
+    "properties": {
+      "log_type": {
+        "const": "rfc6962"
+      }
+    }
+  },
+  "then": {
+    "properties": {
+      "endpoint": {
+        "$ref": "#/definitions/EndpointStatus"
+      }
+    },
+    "required": [
+      "endpoint"
+    ]
+  },
+  "else": {
+    "properties": {
+      "submission_endpoint": {
+        "$ref": "#/definitions/EndpointStatus"
+      },
+      "monitoring_endpoint": {
+        "$ref": "#/definitions/EndpointStatus"
+      }
+    },
+    "required": [
+      "submission_endpoint",
+      "monitoring_endpoint"
+    ]
+  },
+  "definitions": {
+    "EndpointStatus": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "active",
+            "inactive"
+          ]
+        },
+        "status_timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "rate_limit": {
+          "type": "object",
+          "properties": {
+            "requests": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "interval_seconds": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": [
+            "requests",
+            "interval_seconds"
+          ]
+        },
+        "planned_change": {
+          "type": "object",
+          "properties": {
+            "new_status": {
+              "type": "string",
+              "enum": [
+                "active",
+                "inactive"
+              ]
+            },
+            "effective_date": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "comment": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "new_status",
+            "effective_date"
+          ]
+        }
+      },
+      "required": [
+        "url",
+        "status",
+        "status_timestamp"
+      ]
+    }
+  }
+}

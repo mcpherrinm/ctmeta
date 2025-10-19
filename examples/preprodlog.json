@@ -1,0 +1,41 @@
+{
+  "$schema": "https://www.certificate-transparency.org/schemas/log-metadata-v1.json",
+  "log_id": "QARZjGIGapxWkouQVUhxoB9/gnDMF9cgr75mIdrDPfg=",
+  "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE4fAKQCtRdwFSPb8LBZKaoaSpFsxAw49+c7HlvV0YmmY+pVxYWchadoNHy6yyn9DhAzyHQCDNHROiH9rrvv5y8A==",
+  "friendly_name": "nimbus2026",
+  "log_type": "tiled",
+  "mmd_seconds": 86400,
+  "intended_use": "pre-production",
+  "tls_only": true,
+  "temporal_interval": {
+    "start_inclusive": "2026-01-01T00:00:00Z",
+    "end_exclusive": "2027-01-01T00:00:00Z"
+  },
+  "submission_endpoint": {
+    "url": "https://ct.cloudflare.com/logs/nimbus2026/",
+    "status": "active",
+    "status_timestamp": "2025-06-01T00:00:00Z",
+    "rate_limit": {
+      "requests": 1000,
+      "interval_seconds": 60
+    },
+    "planned_change": {
+      "new_status": "inactive",
+      "effective_date": "2026-12-31T23:59:59Z",
+      "comment": "This log will stop accepting submissions at the end of its operational year."
+    }
+  },
+  "monitoring_endpoint": {
+    "url": "https://ct.cloudflare.com/logs/nimbus2026/",
+    "status": "active",
+    "status_timestamp": "2025-06-01T00:00:00Z",
+    "rate_limit": {
+      "requests": 5000,
+      "interval_seconds": 60
+    }
+  },
+  "log_software": {
+    "name": "CloudyMcCloudface",
+    "version": "1.3.0"
+  }
+}
