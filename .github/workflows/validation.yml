@@ -1,0 +1,36 @@
+name: Validation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '**'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v5
+    
+    - name: Set up Python
+      uses: actions/setup-python@v6
+      with:
+        python-version: '3.14.x'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Validate operator.json
+      run: python validate.py --operator examples/operator.json
+    
+    - name: Validate logs
+      run: |
+        python validate.py --log examples/logs/log.json
+        python validate.py --log examples/logs/preprodlog.json
+        python validate.py --log examples/logs/retired.json
