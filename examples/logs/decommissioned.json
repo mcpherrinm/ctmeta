@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.certificate-transparency.org/schemas/log-metadata-v1.json",
-  "log_id": "logIdForRetiredRaio2025LogHere=",
-  "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEoldkeyforraio2025logthatisnowretiredandvalidbase64encoded==",
+  "log_id": "SomeLogIdHashForRaio2025LogRetiredB64ExAAAA=",
+  "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEOldDummyKeyForRaio2025LogThatIsNowRetiredAndValidBase64EncodedSubjectPublicKeyInfoAAAA==",
   "friendly_name": "raio2025",
   "log_spec": "static-ct-api",
   "mmd_seconds": 60,

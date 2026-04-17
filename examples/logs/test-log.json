@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.certificate-transparency.org/schemas/log-metadata-v1.json",
-  "log_id": "someOtherLogIdBase64EncodedString=",
-  "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdummykeyfornimbus2026logthatisverylongandvalidbase64encoded==",
+  "log_id": "SomeLogIdHashForNimbus2026B64ExampleStringA=",
+  "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEDummyKeyForNimbus2026LogThatIsVeryLongAndValidBase64EncodedSubjectPublicKeyInfoAAAAAAA==",
   "friendly_name": "nimbus2026",
   "log_spec": "static-ct-api",
   "mmd_seconds": 86400,
