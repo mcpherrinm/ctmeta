@@ -1,17 +1,17 @@
 {
   "operator_name": "Let's Encrypt",
   "logs": [
-    "https://log.twig.ct.letsencrypt.org/2026h1/log.json",
-    "https://log.twig.ct.letsencrypt.org/2026h2/log.json",
-    "https://log.twig.ct.letsencrypt.org/2027h1/log.json",
-    "https://log.twig.ct.letsencrypt.org/2027h2/log.json",
-    "https://log.sycamore.ct.letsencrypt.org/2026h1/log.json",
-    "https://log.sycamore.ct.letsencrypt.org/2026h2/log.json",
-    "https://log.sycamore.ct.letsencrypt.org/2027h1/log.json",
-    "https://log.sycamore.ct.letsencrypt.org/2027h2/log.json",
-    "https://log.willow.ct.letsencrypt.org/2026h1/log.json",
-    "https://log.willow.ct.letsencrypt.org/2026h2/log.json",
-    "https://log.willow.ct.letsencrypt.org/2027h1/log.json",
-    "https://log.willow.ct.letsencrypt.org/2027h2/log.json"
+    "https://mcpherrinm.github.io/ctmeta/letsencrypt/logs/twig-2026h1.json",
+    "https://mcpherrinm.github.io/ctmeta/letsencrypt/logs/twig-2026h2.json",
+    "https://mcpherrinm.github.io/ctmeta/letsencrypt/logs/twig-2027h1.json",
+    "https://mcpherrinm.github.io/ctmeta/letsencrypt/logs/twig-2027h2.json",
+    "https://mcpherrinm.github.io/ctmeta/letsencrypt/logs/sycamore-2026h1.json",
+    "https://mcpherrinm.github.io/ctmeta/letsencrypt/logs/sycamore-2026h2.json",
+    "https://mcpherrinm.github.io/ctmeta/letsencrypt/logs/sycamore-2027h1.json",
+    "https://mcpherrinm.github.io/ctmeta/letsencrypt/logs/sycamore-2027h2.json",
+    "https://mcpherrinm.github.io/ctmeta/letsencrypt/logs/willow-2026h1.json",
+    "https://mcpherrinm.github.io/ctmeta/letsencrypt/logs/willow-2026h2.json",
+    "https://mcpherrinm.github.io/ctmeta/letsencrypt/logs/willow-2027h1.json",
+    "https://mcpherrinm.github.io/ctmeta/letsencrypt/logs/willow-2027h2.json"
   ]
 }
