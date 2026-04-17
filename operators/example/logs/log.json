@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.certificate-transparency.org/schemas/log-metadata-v1.json",
-  "log_id": "SomeLogIdHashForNimbus2026B64ExampleStringA=",
-  "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEDummyKeyForNimbus2026LogThatIsVeryLongAndValidBase64EncodedSubjectPublicKeyInfoAAAAAAA==",
-  "friendly_name": "nimbus2026",
+  "log_id": "ExampleLogIdHashForLog2026Base64EncodedAAAA=",
+  "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEExampleKeyForLog2026ThatIsValidBase64EncodedSubjectPublicKeyInfoAAAAAAAAAAAAAAAAAAAAAA==",
+  "friendly_name": "log2026",
   "log_spec": "rfc6962",
   "mmd_seconds": 86400,
   "intended_use": "production",
@@ -26,7 +26,7 @@
     }
   ],
   "endpoint": {
-    "url": "https://ct.cloudflare.com/logs/nimbus2026/",
+    "url": "https://example.com/log2026/",
     "rate_limit": {
       "requests": 1000,
       "interval_seconds": 60,

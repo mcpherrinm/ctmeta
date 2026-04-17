@@ -1,0 +1,22 @@
+{
+  "$schema": "https://www.certificate-transparency.org/schemas/log-metadata-v1.json",
+  "log_id": "5eNiR9ku9K2jhYO1NZHbcp/C8ArktnRRdNPd/GqiU4g=",
+  "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEK+2zy2UWRMIyC2jU46+rj8UsyMjLsQIr1Y/6ClbdpWGthUb8y3Maf4zfAZTWW+AH9wAWPLRL5vmtz7Zkh2f2nA==",
+  "friendly_name": "sycamore2027h2",
+  "log_spec": "static-ct-api",
+  "mmd_seconds": 60,
+  "intended_use": "production",
+  "tls_only": true,
+  "temporal_interval": {
+    "start_inclusive": "2027-06-18T00:00:00Z",
+    "end_exclusive": "2027-12-16T00:00:00Z"
+  },
+  "status": "active",
+  "status_timestamp": "2025-11-27T03:00:00Z",
+  "submission_endpoint": {
+    "url": "https://log.sycamore.ct.letsencrypt.org/2027h2/"
+  },
+  "monitoring_endpoint": {
+    "url": "https://mon.sycamore.ct.letsencrypt.org/2027h2/"
+  }
+}

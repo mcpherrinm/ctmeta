@@ -1,0 +1,22 @@
+{
+  "$schema": "https://www.certificate-transparency.org/schemas/log-metadata-v1.json",
+  "log_id": "4yON8o2iiOCq4Kzw+pDJhfC2v/XSpSewAfwcRFjEtug=",
+  "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEtpFyulwgy1+u+wYQ37lbV+HsPFNYoi4sy6dZP662N/Z/usdNi4+Q3RLES1RY2PNk7zL/7VPSn3JERMPu/s4e4A==",
+  "friendly_name": "willow2026h1",
+  "log_spec": "static-ct-api",
+  "mmd_seconds": 60,
+  "intended_use": "production",
+  "tls_only": true,
+  "temporal_interval": {
+    "start_inclusive": "2025-12-17T00:00:00Z",
+    "end_exclusive": "2026-06-17T00:00:00Z"
+  },
+  "status": "active",
+  "status_timestamp": "2025-11-27T03:00:00Z",
+  "submission_endpoint": {
+    "url": "https://log.willow.ct.letsencrypt.org/2026h1/"
+  },
+  "monitoring_endpoint": {
+    "url": "https://mon.willow.ct.letsencrypt.org/2026h1/"
+  }
+}

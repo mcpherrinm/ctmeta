@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.certificate-transparency.org/schemas/log-metadata-v1.json",
-  "log_id": "SomeLogIdHashForRaio2025LogRetiredB64ExAAAA=",
-  "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEOldDummyKeyForRaio2025LogThatIsNowRetiredAndValidBase64EncodedSubjectPublicKeyInfoAAAA==",
-  "friendly_name": "raio2025",
+  "log_id": "ExampleLogIdHashForLog2025Base64EncodedAAAA=",
+  "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEExampleKeyForLog2025ThatIsValidBase64EncodedSubjectPublicKeyInfoAAAAAAAAAAAAAAAAAAAAAA==",
+  "friendly_name": "log2025",
   "log_spec": "static-ct-api",
   "mmd_seconds": 60,
   "intended_use": "decommissioned",
@@ -25,10 +25,10 @@
     "tree_size": 1213760846
   },
   "submission_endpoint": {
-    "url": "https://ct.cloudflare.com/logs/raio2025/submit"
+    "url": "https://example.com/log2025/submit"
   },
   "monitoring_endpoint": {
-    "url": "https://raio2025.ct.cloudflare.com/monitor",
+    "url": "https://log2025.example.com/monitor",
     "rate_limit": {
       "requests": 2000,
       "interval_seconds": 60,
