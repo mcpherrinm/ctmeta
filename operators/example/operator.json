@@ -1,0 +1,9 @@
+{
+  "$schema": "https://www.certificate-transparency.org/schemas/operator-list-v1.json",
+  "operator_name": "Example Operator",
+  "logs": [
+    "https://example.com/log2026/log.json",
+    "https://example.com/testlog2026/log.json",
+    "https://example.com/log2025/log.json"
+  ]
+}

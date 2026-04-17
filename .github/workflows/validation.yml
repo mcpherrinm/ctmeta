@@ -26,11 +26,16 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
-    - name: Validate operator.json
-      run: python validate.py --operator examples/operator.json
-    
+    - name: Validate operators
+      run: |
+        for f in operators/*/operator.json; do
+          echo "=== $f ==="
+          python validate.py --operator "$f"
+        done
+
     - name: Validate logs
       run: |
-        python validate.py --log examples/logs/log.json
-        python validate.py --log examples/logs/test-log.json
-        python validate.py --log examples/logs/decommissioned.json
+        for f in operators/*/logs/*.json; do
+          echo "=== $f ==="
+          python validate.py --log "$f"
+        done
