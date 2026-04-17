@@ -40,7 +40,7 @@ jobs:
       - name: Generate index
         run: python genindex.py --operators operators
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: 'operators'
       - name: Deploy to GitHub Pages
