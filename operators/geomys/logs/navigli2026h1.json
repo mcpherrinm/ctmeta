@@ -1,0 +1,35 @@
+{
+    "description": "navigli2026h1.sunlight.geomys.org",
+    "friendly_name": "navigli2026h1",
+    "submission_url": "https://navigli2026h1.sunlight.geomys.org/",
+    "monitoring_url": "https://navigli2026h1.skylight.geomys.org/",
+    "temporal_interval": {
+        "start_inclusive": "2026-01-01T00:00:00Z",
+        "end_exclusive": "2026-07-01T00:00:00Z"
+    },
+    "log_id": "gs3NR5535F0UrWkDiCxBE/yBwhITvsKz2U6dx82Azf4=",
+    "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEh/xU5f2JBQfU/9jb1aUb06VChY/y+g9VCqiJ+rElEu81HMIj/1jvLzaXl/wYJFSVhtJhl4xeIMBOcltC/t7YTg==",
+    "mmd": 60,
+    "log_spec": "static-ct-api",
+    "mmd_seconds": 60,
+    "tls_only": true,
+    "intended_use": "test",
+    "status": "active",
+    "status_timestamp": "2025-05-03T00:00:00Z",
+    "planned_changes": [
+        {
+            "new_status": "readonly",
+            "effective_date": "2026-07-08T00:00:00Z"
+        }
+    ],
+    "submission_endpoint": {
+        "url": "https://navigli2026h1.sunlight.geomys.org/"
+    },
+    "monitoring_endpoint": {
+        "url": "https://navigli2026h1.skylight.geomys.org/"
+    },
+    "log_software": {
+        "name": "filippo.io/sunlight",
+        "version": "v0.8.1-0.20260417103507-eeebb8a92564+dirty"
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "operator_name": "Geomys",
+  "logs": [
+    "https://navigli2026h1.skylight.geomys.org/log.v3.json",
+    "https://navigli2026h2.skylight.geomys.org/log.v3.json",
+    "https://navigli2027h1.skylight.geomys.org/log.v3.json",
+    "https://navigli2027h2.skylight.geomys.org/log.v3.json"
+  ]
+}
