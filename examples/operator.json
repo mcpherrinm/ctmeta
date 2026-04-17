@@ -1,9 +1,0 @@
-{
-  "$schema": "https://www.certificate-transparency.org/schemas/operator-list-v1.json",
-  "operator_name": "Cloudflare",
-  "logs": [
-    "https://ct.cloudflare.com/logs/nimbus2026/metadata.json",
-    "https://ct.cloudflare.com/logs/raio2027/metadata.json",
-    "https://ct.cloudflare.com/logs/raio2025/metadata.json"
-  ]
-}
