@@ -2,8 +2,8 @@
   "$schema": "https://www.certificate-transparency.org/schemas/operator-list-v1.json",
   "operator_name": "Example Operator",
   "logs": [
-    "https://example.com/log2026/log.json",
-    "https://example.com/testlog2026/log.json",
-    "https://example.com/log2025/log.json"
+    "https://mcpherrinm.github.io/ctmeta/example/logs/log.json",
+    "https://mcpherrinm.github.io/ctmeta/example/logs/test-log.json",
+    "https://mcpherrinm.github.io/ctmeta/example/logs/decommissioned.json"
   ]
 }
