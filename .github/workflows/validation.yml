@@ -32,5 +32,5 @@ jobs:
     - name: Validate logs
       run: |
         python validate.py --log examples/logs/log.json
-        python validate.py --log examples/logs/preprodlog.json
-        python validate.py --log examples/logs/retired.json
+        python validate.py --log examples/logs/test-log.json
+        python validate.py --log examples/logs/decommissioned.json
