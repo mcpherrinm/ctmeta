@@ -1,22 +1,9 @@
 {
   "$schema": "https://www.certificate-transparency.org/schemas/operator-list-v1.json",
-  "operator_name": "CtMetaDemo",
-  "last_updated": "2025-10-22T21:18:49Z",
+  "operator_name": "Cloudflare",
   "logs": [
-    {
-      "friendly_name": "nimbus2026",
-      "log_id": "QARZjGIGapxWkouQVUhxoB9/gnDMF9cgr75mIdrDPfg=",
-      "metadata_url": "https://mcpherrinm.github.io/ctmeta/logs/log.json"
-    },
-    {
-      "friendly_name": "nimbus2026",
-      "log_id": "QARZjGIGapxWkouQVUhxoB9/gnDMF9cgr75mIdrDPfg=",
-      "metadata_url": "https://mcpherrinm.github.io/ctmeta/logs/preprodlog.json"
-    },
-    {
-      "friendly_name": "raio2025",
-      "log_id": "QARZjGIGapxWkouQVUhxoB9/gnDMF9cgr75mIdrDPfg=",
-      "metadata_url": "https://mcpherrinm.github.io/ctmeta/logs/retired.json"
-    }
+    "https://ct.cloudflare.com/logs/nimbus2026/metadata.json",
+    "https://ct.cloudflare.com/logs/raio2027/metadata.json",
+    "https://ct.cloudflare.com/logs/raio2025/metadata.json"
   ]
 }

@@ -3,10 +3,10 @@
   "log_id": "SomeLogIdHashForNimbus2026B64ExampleStringA=",
   "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEDummyKeyForNimbus2026LogThatIsVeryLongAndValidBase64EncodedSubjectPublicKeyInfoAAAAAAA==",
   "friendly_name": "nimbus2026",
-  "log_spec": "rfc6962",
+  "log_spec": "static-ct-api",
   "mmd_seconds": 86400,
-  "intended_use": "production",
-  "tls_only": false,
+  "intended_use": "test",
+  "tls_only": true,
   "temporal_interval": {
     "start_inclusive": "2026-01-01T00:00:00Z",
     "end_exclusive": "2027-01-01T00:00:00Z"
@@ -15,17 +15,12 @@
   "status_timestamp": "2025-06-01T00:00:00Z",
   "planned_changes": [
     {
-      "new_status": "readonly",
-      "effective_date": "2026-12-31T23:59:59Z",
-      "comment": "This log will stop accepting new certificate submissions at the end of its operational year, but will remain available for monitoring."
-    },
-    {
       "new_status": "inactive",
-      "effective_date": "2027-06-30T00:00:00Z",
-      "comment": "All endpoints will be taken offline mid-year following the submission window closure."
+      "effective_date": "2026-12-31T23:59:59Z",
+      "comment": "This test log will be taken offline at the end of its operational year."
     }
   ],
-  "endpoint": {
+  "submission_endpoint": {
     "url": "https://ct.cloudflare.com/logs/nimbus2026/",
     "rate_limit": {
       "requests": 1000,
@@ -33,8 +28,16 @@
       "scope": "ip"
     }
   },
+  "monitoring_endpoint": {
+    "url": "https://ct.cloudflare.com/logs/nimbus2026/",
+    "rate_limit": {
+      "requests": 5000,
+      "interval_seconds": 60,
+      "scope": "ip"
+    }
+  },
   "log_software": {
     "name": "CloudyMcCloudface",
-    "version": "2.1.0"
+    "version": "1.3.0"
   }
 }
